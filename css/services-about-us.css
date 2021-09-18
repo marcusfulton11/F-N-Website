@@ -1,0 +1,607 @@
+/*  */
+
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Everything above is CSS reset */
+
+/* General Stylings */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* HeaderFooter Styles */
+.logoNP {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.jumbotron {
+  background-image: url("../img/home/home-jumbotron.png");
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: none;
+  background-size: cover;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color: #828282;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+  padding: 4% 0;
+}
+
+.h3NP {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+nav {
+  min-height: 3rem;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #99a5b0;
+  /* z-index: 1; */
+}
+
+.topnav a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-weight: Bold;
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.topnav a.active {
+  font-weight: Bold;
+  line-height: 8.5rem;
+  color: #ffffff;
+}
+
+.topnav .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+.topnav.actmenu a {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+.h2np {
+  color: white;
+  font-size: 4rem;
+  margin: 1rem 15rem;
+}
+
+.hambImg {
+  font-size: 0px;
+  line-height: 0rem !important;
+  margin-top: 1rem;
+  margin-right: 15rem;
+}
+
+.linkNP {
+  padding: 5rem;
+}
+
+.container-about {
+  background: url("../img/services/services-jumbotron.png") no-repeat;
+  background-size: 100% 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bottomleft {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 17vh;
+  margin-bottom: 3%;
+}
+
+.bottemleftHide {
+  display: none;
+}
+
+#linkBottom {
+  padding-bottom: 13rem;
+}
+
+/* End HeaderFooter */
+
+/* service.html CSS section start*/
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.body-div {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.services-description-text-top {
+  margin: 4rem 0;
+}
+
+/* Style tab links */
+.tab-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tablink {
+  background-color: white;
+  color: black;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1%;
+  width: 15%;
+  border: 1px solid black;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 2.5rem 0;
+  height: 100%;
+}
+
+.tab-flex {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.tax-text-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#pre-construction-mobile {
+  display: none !important;
+}
+#construction-image-mobile {
+  display: none !important;
+}
+#design-build-image-mobile {
+  display: none !important;
+}
+#sustainability-image-mobile {
+  display: none !important;
+}
+
+/* about us css section starts */
+
+.mission-title {
+  font-size: 5rem;
+  line-height: 5rem;
+  margin: 2rem 0;
+}
+
+.mission-text {
+  margin: 2rem 0;
+  margin-bottom: 7rem;
+}
+
+.about-text-main-section-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.title-of-paragraph-about {
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.paragraphs-about {
+  margin: 0 2rem;
+  height: auto;
+  width: 45rem;
+}
+
+.first-paragraph-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-paragraph-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-about {
+  width: 65vh;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.break-about {
+  margin-bottom: 7rem;
+}
+
+/* about us css section ends */
+
+@media only screen and (max-width: 1160px) {
+  .tablink {
+    font-size: 1.2rem;
+  }
+  #pre-construction-desktop {
+    display: none !important;
+  }
+  #pre-construction-mobile {
+    display: block !important;
+  }
+
+  #construction-image-desktop {
+    display: none !important;
+  }
+  #construction-image-mobile {
+    display: block !important;
+  }
+
+  #design-build-image-desktop {
+    display: none !important;
+  }
+  #design-build-image-mobile {
+    display: block !important;
+  }
+
+  #sustainability-image-desktop {
+    display: none !important;
+  }
+  #sustainability-image-mobile {
+    display: block !important;
+  }
+  /* .bottomleft {
+    position: absolute;
+    bottom: 40rem;
+    left: 15rem;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bold;
+    color: white;
+  } */
+}
+
+@media only screen and (max-width: 992px) {
+  .body-div {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .tablink {
+    font-size: 1rem;
+  }
+
+  .tab-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-flex-img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  #pre-construction-desktop {
+    display: none !important;
+  }
+  #pre-construction-mobile {
+    display: block !important;
+  }
+
+  #construction-image-desktop {
+    display: none !important;
+  }
+  #construction-image-mobile {
+    display: block !important;
+  }
+
+  #design-build-image-desktop {
+    display: none !important;
+  }
+  #design-build-image-mobile {
+    display: block !important;
+  }
+
+  #sustainability-image-desktop {
+    display: none !important;
+  }
+  #sustainability-image-mobile {
+    display: block !important;
+  }
+
+  /* .bottomleft {
+    position: absolute;
+    bottom: 45rem;
+    left: 15rem;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bold;
+    color: white;
+  } */
+}
+
+@media only screen and (max-width: 800px) {
+  .hambImg {
+    font-size: 0px;
+    line-height: 0rem !important;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  .h2np {
+    margin-left: 3%;
+  }
+
+  .tab-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2% 0;
+  }
+
+  .about-text-main-section-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tablink {
+    background-color: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1%;
+    width: 100%;
+    border: 1px solid black;
+    margin: 1% 0;
+  }
+
+  .tab-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-flex-img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  footer {
+    flex-flow: column nowrap;
+  }
+  footer form {
+    padding-bottom: 4%;
+    padding-left: 1%;
+  }
+  footer div {
+    padding-bottom: 4%;
+    padding-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .body-div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hambImg {
+    font-size: 0px;
+    line-height: 0rem !important;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  .h2np {
+    margin-left: 3%;
+  }
+
+  .mission-title {
+    font-size: 4rem;
+  }
+
+  .tab-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .tablink {
+    background-color: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1%;
+    width: 100%;
+    border: 1px solid black;
+    margin: 1% 0;
+  }
+
+  .tab-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-flex-img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  footer {
+    flex-flow: column nowrap;
+  }
+  footer form {
+    padding-bottom: 4%;
+    padding-left: 1%;
+  }
+  footer div {
+    padding-bottom: 4%;
+    padding-left: 1%;
+  }
+}
+
+/* services css section end */

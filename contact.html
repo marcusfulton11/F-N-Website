@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/contact-projects.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<header>
+	<nav>
+        <div class="topnav" id="myTopnav">
+          <h2 class="active h2np">F&N</h2>
+          <a class="linkNP" href="./index.html">Home</a>
+          <a class="linkNP" href="./services.html">Services</a>
+          <a class="linkNP" href="./projects.html">Projects</a>
+          <a class="linkNP" href="./meet-the-team.html">Meet The Team</a>
+          <a class="linkNP" href="./about-us.html">About Us</a>
+          <a class="linkNP" id="linkBottom" href="./contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img
+              class="hambImg"
+              id="hamImgID"
+              src="img/nav-hamburger.png"
+              alt="Click here for Menu"
+            />
+          </a>
+        </div>
+	  </nav>
+	  <div class="container-contact">
+        <div class="jumbotron-contact">
+          <div></div>
+          <div id="jumboTronHeader" class="bottomleft">
+            Contact Us
+          </div>
+        </div>
+      </div>
+	</div>
+</header>
+
+<!-- Contact Page HTML by TL Tsay -->
+<section id="contact-pg">
+	<form id='contact-pg-form-container'>
+		<h2>Get In Touch</h2>
+
+		<div id='contact-pg-email-form'>
+			<label for="email">Email address</label> <br>
+			<!-- Checking if user types a valid email address -->
+			<!-- 'Placeholder' grays out 'Enter email' -->
+			<input type="email" id="contact-pg-email" name="email" placeholder='  Enter email'> <br>
+			<p> We'll never share your email with anyone else. </p>
+		</div>
+
+		<div id='buildings-needed-drop-down'>
+			<label for="buildings-needed">How many buildings do you need planned?</label><br>
+			<select name='buildings-needed' id='buildings-needed'>
+				<option value='1'>1</option>
+				<option value='2-5'>2 - 5</option>
+				<option value='6-10'>6 - 10</option>
+				<option value='11-20'>11 - 20</option>
+				<option value='20+'>20+</option>
+			</select>
+		</div>
+
+		<div id='project-text-form'>
+			<label for="project-needs">
+				Provide a brief overview of your project needs:</label><br>
+				<!-- Resize text box area by adjusting the numbers for 'rows','cols=60'-->
+			<textarea id='project-needs' name='project needs' rows='6'>
+				</textarea>
+		</div>
+
+		<div id='client-type-radio-buttons'>
+			<!-- Same 'client type' = user can only select one radio button -->
+			<input type='radio' id ='small-business' name='client-type' value='small-business'>
+			<label for='small-business'>I am a small business</label><br>
+			<input type='radio' id ='residential-owner' name='client-type' value='residential-owner'>
+			<label for='residential-owner'>I am a residential owner</label><br>
+			<input type='radio' id ='corporation' name='client-type' value='corporation'>
+			<label for='corporation'>I am a corporation</label><br>
+		</div>
+
+		<input type='submit' id='submit-button' value='Submit'>
+	</form>
+
+	<aside id='contact-pg-addrs'>
+		<h2>Where We Work</h2>
+
+		<div id='contact-pg-ny-addr'>
+			<h3>Greenock</h3>
+			<p>	Burns Lane <br>
+				Suite 100 <br>
+				Greenock, Scotland 12345 <br>
+				202 555 0144</p>
+		</div>
+
+		<div id='contact-pg-fl-addr'>
+			<h3>Gourock</h3>
+			<p>	Clyde Drive <br>
+				Suite 201 <br>
+				Gourock, Scotland 22345 <br>
+				502 555 0144</p>
+		</div>
+
+		<div id='contact-pg-ca-addr'>
+			<h3>Dublin</h3>
+			<p>	Shannon Street <br>
+				Suite 105 <br>
+				Dublin, Ireland 22345 <br>
+				702 555 0144</p>
+		</div>
+	</aside>
+
+	<script src="js/index.js"></script>
+</section>
+
+<!-- Footer and Javascript by N.Patterson -->
+<footer>
+
+	<form action="">
+	  <h3 class=".h3NP">Interested in starting a project? <br />Let's talk:</h3>
+	  <input id="email-footer-input" type="Email" />
+
+	  <p>We'll never share your email with anyone else.</p>
+	</form>
+
+	<div>
+        <h3 class="h3NP">Greenock</h3>
+        <p>Burns Lane<br />Suite 100<br />Greenock, Scotland 12345<br />202 555 0144</p>
+      </div>
+      <div>
+        <h3 class="h3NP">Gourock</h3>
+        <p>
+          Clyde Drive<br />Suite 201<br />Gourock, Scotland 22345<br />502 555 0144
+        </p>
+      </div>
+      <div>
+        <h3 class="h3NP">Dublin</h3>
+        <p>
+          Shannon street<br />Suite 105<br />Dublin, Ireland 22345<br />702 555
+          0144
+        </p>
+      </div>
+
+
+  <p></p>
+</div>
+</footer>
+</body>
+<script src="./js/index.js"></script>
+</html>
